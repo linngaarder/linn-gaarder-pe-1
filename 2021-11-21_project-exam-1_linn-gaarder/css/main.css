@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+    color: #E6E6E6;
+    font-weight: 400;
+}
+
+/* Typography */
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1.25rem;
+}
+
+.h2-title {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1rem;
+}
+
+.apod-h3 {
+    letter-spacing: 1px;
+}
+
+.rover-h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+
+p {
+    max-width: 600px;
+    margin-top: 0;
+    padding: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Layout */
+
+#page-1, #page-4 {
+    
+    background: rgb(13,101,217);
+    background: linear-gradient(0deg, rgba(13,101,217,1) 0%, rgba(27,21,21,1) 55%, rgba(13,101,217,1) 100%);
+}
+
+#page-2 {
+    background: rgb(50,24,131);
+    background: linear-gradient(0deg, rgba(50,24,131,1) 0%, rgba(51,48,61,1) 55%, rgba(50,24,131,1) 100%);
+} 
+
+#page-3 {
+    background: rgb(195,134,68);
+    background: linear-gradient(0deg, rgba(195,134,68,1) 0%, rgba(3,2,2,1) 55%, rgba(195,134,68,1) 100%);
+}
+
+.container {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.col-1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.col-2 {
+    border: 2px solid rgb(196, 196, 196);
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: block;
+}
+
+.col-3 {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 20px;
+
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-img {
+
+    width: 60%;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.launch-img {
+    width: 60%;
+}
+
+.logo {
+    width: 50px;
+}
+
+.apod-img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mars-img {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+p {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.error {
+    background-color: #fff;
+    color: red;
+    padding: 30px;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #E6E6E6;
+}
+
+nav a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+.active {
+    color: #000;
+    text-decoration: underline;
+}
+
+.link {
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.schedule-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    
+}
+
+/* form */
+
+.form-container {
+    box-sizing: border-box;
+    font-family: 'Azeret Mono', monospace;
+    max-width: 600px;
+    margin: 5% auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+    letter-spacing: 1px;
+    border-radius: .25em;
+}
+
+form {
+    padding: 10px;
+    background: #fff;
+    border-radius: .25rem;
+}
+
+input{
+    width: 80%;
+    margin-top: 8px;
+    padding: 10px;
+}
+
+#message {
+    height: 10vh;
+}
+
+button {
+    margin-top: 10px;
+    background: #7A97CA;
+    border: none;
+    width: 200px;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+button:hover,
+button:focus {
+    background-color: crimson;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+/* media query */
+
+@media (max-width: 668px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
+
+    .col-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-3 {
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .form-container {
+        max-width: 70%;
+    }
+}
+
+
